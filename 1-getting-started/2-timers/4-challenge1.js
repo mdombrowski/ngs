@@ -1,6 +1,11 @@
-const theOneFunc = () => {};
+const theOneFunc = (delay) => {
+    console.log('Hello after ' + delay + ' seconds');
+};
 
-setTimeout(theOneFunc, 4 * 1000);
+for (i = 1; i < 5;  i++)
+{
+setTimeout(theOneFunc, i * 1000, i);
+}
 
 // Hello after 4 seconds
 
